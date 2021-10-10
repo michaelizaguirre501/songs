@@ -29,7 +29,7 @@ class SongList extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return { songs: state.songs, selectedSong: state.selectedSong };
+  return { songs: state.songs };
 };
 
 export default connect(mapStateToProps, { selectSong })(SongList);
